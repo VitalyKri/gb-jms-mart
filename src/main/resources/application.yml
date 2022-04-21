@@ -1,0 +1,7 @@
+
+spring:
+  artemis:
+    user: 'artemis'
+    password: 'simetraehcapa'
+server:
+  port: 45631
