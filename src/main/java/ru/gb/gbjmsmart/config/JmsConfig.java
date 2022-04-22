@@ -1,14 +1,19 @@
 package ru.gb.gbjmsmart.config;
-
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
 import org.springframework.jms.support.converter.MappingJackson2MessageConverter;
 import org.springframework.jms.support.converter.MessageConverter;
 import org.springframework.jms.support.converter.MessageType;
 
+
 @Configuration
 public class JmsConfig {
-    public static final String MY_QUEUE = "gb-hello-world";
+
+    public static final String MY_QUEUE = "helloWorld";
+
+    public static final String ORDER_QUEUE = "OrderShop";
 
     @Bean
     public MessageConverter messageConverter(){
